@@ -1,0 +1,7 @@
+title New note SPA
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa with JSON data
+note over Server: Updates the data
+Server->Browser: HTTP Status 201
+
+note over Browser: the form submit event executes that adds the note to the notes array and renders the updated list with DOM API

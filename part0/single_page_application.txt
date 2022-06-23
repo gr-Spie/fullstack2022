@@ -1,0 +1,15 @@
+title Single Page Application
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server->Browser: HTML-code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server->Browser: spa.js
+
+note over Browser: Browser executes spa.js code that requests JSON data from the server
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: JSON data
+
+note over Browser: when the data is fetched it executes an event that renders the data using the DOM API 
